@@ -1,0 +1,66 @@
+.container {
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.game-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.game-row {
+  display: flex;
+}
+.game-cell {
+  width: 50px;
+  height: 50px;
+  border: gray 2px solid;
+}
+
+.goblin {
+  background-image: url('../img/goblin.png');
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.score-bar {
+  text-align: center;
+  font-size: large;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: grey;
+  opacity: 0.9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popup-message {
+  font-size: xxx-large;
+  color: whitesmoke;
+  display: block;
+}
+.popup-button {
+  z-index: 3;
+  border: none;
+  background-color: lightgrey;
+  color: black;
+  display: block;
+  font-size: large;
+  width: 150px;
+}
+.hidden {
+  display: none;
+}
